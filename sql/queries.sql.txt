@@ -1,0 +1,28 @@
+-- Q1: Preview raw order-item data
+SELECT * FROM olist_order_items_dataset LIMIT 10;
+
+-- Q2: Average price and freight per product category
+SELECT 
+    t.product_category_name_english,
+    COUNT(*) AS num_orders,
+    ROUND(AVG(oi.price), 2) AS avg_price,
+    ROUND(AVG(oi.freight_value), 2) AS avg_freight
+FROM olist_order_items_dataset oi
+JOIN olist_products_dataset p ON oi.product_id = p.product_id
+JOIN product_category_name_translation t ON p.product_category_name = t.product_category_name
+GROUP BY t.product_category_name_english
+ORDER BY num_orders DESC
+LIMIT 20;
+
+-- Q3: Average review score per category (categories with 100+ orders)
+SELECT 
+    t.product_category_name_english,
+    ROUND(AVG(r.review_score), 2) AS avg_review_score,
+    COUNT(DISTINCT oi.order_id) AS num_orders
+FROM olist_order_items_dataset oi
+JOIN olist_products_dataset p ON oi.product_id = p.product_id
+JOIN product_category_name_translation t ON p.product_category_name = t.product_category_name
+JOIN olist_order_reviews_dataset r ON oi.order_id = r.order_id
+GROUP BY t.product_category_name_english
+HAVING num_orders > 100
+ORDER BY avg_review_score DESC;

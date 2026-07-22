@@ -1,0 +1,23 @@
+# E-Commerce Pricing & Demand Analysis — Findings & Recommendations
+
+## What I analyzed
+Analyzed pricing, order volume, and review scores across 53 product categories 
+using the Olist Brazilian e-commerce dataset (113,314 order-item records).
+
+## Key findings
+1. Categories like stationery, sports_leisure, health_beauty, toys, pet_shop, 
+   perfumery, and housewares show strong order volume and solid review scores 
+   (above 4.0) at relatively low average prices — a signal there's room to test 
+   price increases without hurting demand.
+2. Categories like construction_tools_safety, fixed_telephony, and 
+   agro_industry_and_commerce show high average prices but noticeably lower 
+   order volume (194-265 orders, versus 2,000-9,700+ for the top group) — 
+   candidates for price cuts or bundled promotions.
+3. Review scores across categories were fairly consistent (4.1 to 4.45), meaning 
+   price and demand patterns matter more than review score differences when 
+   deciding where to test pricing changes.
+
+## Recommendation
+Run a controlled price-increase test on 2-3 of the top underpriced categories 
+(e.g. stationery, health_beauty), and test a promotional discount or bundling 
+strategy on the identified overpriced, low-demand categories to lift order volume.
