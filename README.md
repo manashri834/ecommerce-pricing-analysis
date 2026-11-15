@@ -5,7 +5,7 @@ Analyzing pricing, ratings, and sales-volume data for 500+ products across 53 ca
 ## 📊 Dashboard
 ![Dashboard Overview](screenshots/dashboard_overview.png)
 
-[View Live Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/manashri.s/viz/ecommerce-pricing-dashboard/Dashboard1)
+[View Live Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/manashri.s/viz/ecommerce-pricing-dashboard2/Dashboard1?publish=yes)
 
 ## 🔍 Key Findings
 - **`stationery` and `health_beauty`** show strong order volume and solid review scores (4.0+) at relatively low average prices — indicating room to test price increases without hurting demand.
