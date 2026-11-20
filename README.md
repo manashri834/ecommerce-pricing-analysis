@@ -1,6 +1,6 @@
 # E-Commerce Product Pricing & Demand Analysis
 
-Analyzing pricing, ratings, and sales-volume data for 500+ products across 53 categories using SQL and Python, to identify where pricing changes could improve revenue without hurting demand.
+Analyzed pricing, ratings, and order-volume data across 53 product categories using SQL and Python to identify potential pricing opportunities and recommend categories for further testing.
 
 ## 📊 Dashboard
 ![Dashboard Overview](screenshots/dashboard_overview.png)
@@ -8,9 +8,9 @@ Analyzing pricing, ratings, and sales-volume data for 500+ products across 53 ca
 [View Live Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/manashri.s/viz/ecommerce-pricing-dashboard2/Dashboard1?publish=yes)
 
 ## 🔍 Key Findings
-- **`stationery` and `health_beauty`** show strong order volume and solid review scores (4.0+) at relatively low average prices — indicating room to test price increases without hurting demand.
-- **`construction_tools_safety`** shows a high average price paired with very low order volume (194–265 orders, vs. 2,000–9,700+ for top-performing categories) — a strong candidate for a price cut or bundled promotion.
-- Review scores across all 53 categories were fairly consistent (4.1–4.45), meaning **price and demand patterns matter more than review-score differences** when deciding where to test pricing changes.
+- **`stationery` and `health_beauty`** showed relatively high order volume, favorable review scores, and comparatively low average prices, making them potential candidates for controlled price-increase experiments.
+- **`construction_tools_safety`** showed relatively high average prices and low order volume compared with higher-volume categories. This warrants further investigation into product pricing, assortment, and potential targeted promotions or bundles.
+- Review scores varied relatively little across the analyzed categories. Since ratings showed limited variation, the analysis focused primarily on price and order-volume patterns to identify potential pricing opportunities.
 
 ## 📈 Recommendation
 Run a controlled price-increase test on `stationery` and `health_beauty`, and test a promotional discount or bundling strategy on `construction_tools_safety` to lift order volume. Full reasoning in [`recommendation_memo.md`](recommendation_memo.md.txt).
